@@ -50,3 +50,37 @@ With React it works differently. The component containing the form will keep tra
 ### 7. What is a higher order component?
 
 A HOC is an advanced technique in React for reusing component logic. HOCs are not part of the React API. They are a pattern for reuse code, logic, and bootstrap astraction. They takes a component and returns a new component. The most common is Context and Redux's connect function.
+
+### 8. What are controlled and uncotrolled components in React?
+
+#### Controlled component
+
+A controlled component(dumb component) is one that takes its current value through props and notifies changes through callback like onChange.
+A parent component controls it by handling the callback and managing his own state and passing new values as props to the controlled component.
+
+#### Uncontrolled component
+
+A uncontrolled component is one that stores its own state internaly, and you query the DOM using ref to find its current value when you need it. Its a bit more like traditional HTML.
+
+## Redux
+
+### 9. What is Redux?
+
+Redux is based on the idea that there should be only a single source of truth for your app state. The basic idea of Redux is that the entry app state is kept in a single store. The store is a JS object. The only way to change state is by firing actions from your app and then writing reducer for these actions that modify state. Reducers are clean functions and should not have any side-effects.
+
+### 10. Explain the components of Redux?
+
+#### Action 
+Actions are payloads of information that send data from our application to our store. They are the only source of information for the store. Primarly, they are just and object describes what happend in our app.
+
+### Reducer 
+Reducers specify how the application's state changes in response to actions sent to the store. So this place determines how state will change to an action.
+
+### Store
+The store is the object that brings Actions and Reducer together. 
+The store has the following responsibilities: 
+- Holds app state;
+- Allow access to state via getState();
+- Allow state to be update via dispatch(action);
+- Register listeners;
+
