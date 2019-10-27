@@ -78,6 +78,10 @@ When several components need to share the same changing data then it is recommen
 
 Portals is a recommended way to render children into a DOM node that exist outside the DOM hierarchy of the parent component.
 
+### Do Hooks replace render props and higher order components?
+
+Both render props and hider-order components render only a single child but it most of the cases Hooks are a simpler way to serve this by reducing nesting in your tree.
+
 ## Redux
 
 ### What is Redux?
