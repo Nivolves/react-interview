@@ -44,7 +44,7 @@ Props are a Component's configuration. Props are how components talks to each ot
 
 ### What are controlled components? 
 
-In HTML, form elememts such as input, select, textarea have their owen state and update it based user input. When user submits a form the values of this elements are sent with the form.
+In HTML, form elememts such as input, select, textarea have their own state and update it based user input. When user submits a form the values of this elements are sent with the form.
 With React it works differently. The component containing the form will keep track of the value of the input in its state and will re-render the component each time the callback function is fired as the state will be update. A form element whose value is controlled by React in this way callend a "controlled component".
 
 ### What is a higher order component?
@@ -103,4 +103,34 @@ The store has the following responsibilities:
 - Allow access to state via getState();
 - Allow state to be update via dispatch(action);
 - Register listeners;
+
+## Javascript
+
+### What the difference between Function Expression and Function Declaration?
+
+Function Expression creates when the execution reaches it and can then be used.
+
+Function Declaration can be used in all script or code block when function determined in block.
+
+### What the difference between var, let and const?
+
+var - haven't got block scope. They are limited by function's body. var announcement occurs at the beginning of the f-tion.
+
+### Symbols, Objects, Map, Set, WeakMap, WeakSet, BigInt.
+
+Symbol - is a primitive datatype used to create unique identifiers. Symbols are created by a call to the Symbol() function, to which you can pass Symbol description Symbol(name). Object.getOwnPropertySymbols(obj) with it you can get all the properties of an object with keys-symbols. There is also a Reflect.ownKeys(obj) method that returns an object keys. Even if the Symbol have the same name, they are different Symbols.
+
+Map is a key/value collection just like Object. But the main difference is that Map allows you to use keys of any type.
+
+Set is a special kind of collection (without keys) where each value can appear only once.
+
+WeakMap is a Map-like collection that allows only objects to be used as keys and automatically deletes them together with their values as soon as they become innacessible another ways. 
+
+WeakSet is a Set like collection that allows only objects and automatically deletes them as soon as they innacessible another ways.
+
+### Closure 
+
+Closure is the ability of a function to maintain its lexical enviroment when it is called outside its lexical enviroment.
+
+
 
