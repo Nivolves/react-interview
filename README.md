@@ -132,5 +132,21 @@ WeakSet is a Set like collection that allows only objects and automatically dele
 
 Closure is the ability of a function to maintain its lexical enviroment when it is called outside its lexical enviroment.
 
+### Lexical enviroment
 
+The object of lexical enviroment consist of two parts:
+- Enviroment record is an object where all local variables are stored as properties.
+- A reference to an external is on that corresponds to the code externally(outside of currend curly brackets).
+All functions receive a hidden property [[Enviroment]], which refers to a lexical enviroment of the place where they are created.
 
+### Spread operator(...)
+
+Spread operator is interpretated differently depending on the context. Spread is used to separate collections into separate elements and rest to merge individual values into an array.
+
+### Event loop
+
+- Select and execute the oldest tasks from the macrotasks queue.
+- Execute all microtasks 
+- - While the microtask queue is not empty: select from the queue and execute the oldest microtask
+- Render page changes if any.
+- If macrotasks queue is empty, wait until task appears.
