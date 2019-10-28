@@ -150,3 +150,4 @@ Spread operator is interpretated differently depending on the context. Spread is
 - - While the microtask queue is not empty: select from the queue and execute the oldest microtask
 - Render page changes if any.
 - If macrotasks queue is empty, wait until task appears.
+- Go to step 1.
