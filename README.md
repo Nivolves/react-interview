@@ -6,7 +6,7 @@
 
 The Real DOM is always tree-structured. The DOM trees are huge nowdays because of large apps. We need to modify the DOM tree a lot of times. And this a real perfomance and development pain. 
 
-The Virtual DOM is abstraction of the Real DOM. It is lightweight and detached from the browser-specific implimentation details. Its not invented by React but it uses it and provide it. ReactElements lives in Virtual DOM. They make basics nodes here. Once we defined the elements, ReactElements can be reder into Real DOM.
+The Virtual DOM is abstraction of the Real DOM. It is lightweight and detached from the browser-specific implimentation details. Its not invented by React but it uses it and provide it. ReactElements lives in Virtual DOM. They make basics nodes here. Once we defined the elements, ReactElements can be render into Real DOM.
 
 #### Real DOM
 - Real DOM updates slow
